@@ -48,8 +48,8 @@ jobs:
         if: ${{ github.event_name != 'pull_request' }}
         run: |-
           git diff
-          git config --global user.email "test1@example.com"
-          git config --global user.name "test1"
+          git config --global user.email "fredchou@gmail.com"
+          git config --global user.name "fred"
           git add -A
           git commit -m "Updated by Github Bot" || exit 0
           git push origin master
